@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Error><Number>80040B19</Number><Description>XML Syntax Error: Please check the XML request to see if it can be parsed.</Description><Source>USPSCOM::DoAuth</Source></Error>
