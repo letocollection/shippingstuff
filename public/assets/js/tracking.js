@@ -16,11 +16,12 @@ function getResults() {
 
             $('#uspsTracking').prepend('<p class="dataentry" data-id=' + data[i]._id + '><span class="dataTitle" data-id=' + data[i]._id + '>' + data[i].title + '</span><span class=deleter>X</span></p>');
 
-            $(document).on('click', '#uspsTracking', function() {
-
-            var trackingNum = 'CV044424388US';//this is where I left off. Can't get this damn thing to get the tracking #. 
+            var trackingNum = data[i].title;
             console.log(trackingNum);
 
+
+            $(document).on('click', '#checktracking', function() {
+            
             window.open('https://tools.usps.com/go/TrackConfirmAction?qtc_tLabels1=' + trackingNum);
 
         });
@@ -142,13 +143,4 @@ $(document).on('click', '#updater', function() {
             getResults();
         }
     });
-});
-
-$(document).on('click', '#checktracking', function() {
-
-    var trackingNum = $('#checktracking').val();
-    console.log(trackingNum);
-
-    window.open('https://tools.usps.com/go/TrackConfirmAction?qtc_tLabels1=' + trackingNum)
-
 });
