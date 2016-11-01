@@ -19765,21 +19765,90 @@
 
 /***/ },
 /* 159 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
+
+	// Include React 
+	var React = __webpack_require__(1);
+
+	// Create the Header component
+	// Notice how the header uses .createClass
+	// Notice how it uses a render function which specifies what will be displayed by the component
+	var Header = React.createClass({
+		displayName: 'Header',
+
+
+		render: function render() {
+
+			return React.createElement(
+				'h1',
+				null,
+				'I\'m a header!'
+			);
+		}
+	});
+
+	// Export the componen back for use in other files
+	module.exports = Header;
 
 /***/ },
 /* 160 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
+
+	// Include React 
+	var React = __webpack_require__(1);
+
+	// Create the Results component
+	// Notice how the header uses .createClass
+	// Notice how it uses a render function which specifies what will be displayed by the component
+	var Results = React.createClass({
+		displayName: 'Results',
+
+
+		render: function render() {
+
+			return React.createElement(
+				'h1',
+				null,
+				'I\'m the Results Component!!'
+			);
+		}
+	});
+
+	// Export the componen back for use in other files
+	module.exports = Results;
 
 /***/ },
 /* 161 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
+
+	// Include React 
+	var React = __webpack_require__(1);
+
+	// Create the Search component
+	// Notice how the header uses .createClass
+	// Notice how it uses a render function which specifies what will be displayed by the component
+	var Search = React.createClass({
+		displayName: 'Search',
+
+
+		render: function render() {
+
+			return React.createElement(
+				'h1',
+				null,
+				'I\'m the Search Component!!'
+			);
+		}
+	});
+
+	// Export the componen back for use in other files
+	module.exports = Search;
 
 /***/ }
 /******/ ]);
