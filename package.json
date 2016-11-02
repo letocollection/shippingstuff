@@ -9,8 +9,12 @@
   "author": "Ahmed Haque",
   "license": "ISC",
   "dependencies": {
+    "install": "^0.8.2",
+    "npm": "^3.10.9",
     "react": "^0.14.3",
-    "react-dom": "^0.14.3"
+    "react-dom": "^0.14.3",
+    "shipping-ups": "^0.5.7",
+    "usps": "^1.0.3"
   },
   "devDependencies": {
     "babel-core": "^6.3.13",

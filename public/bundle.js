@@ -19830,21 +19830,66 @@
 	// Include React 
 	var React = __webpack_require__(1);
 
+	// var upsAPI = require('shipping-ups');
+
+	var ups = new upsAPI({
+	    environment: 'sandbox', // or live 
+	    username: 'leonardoh',
+	    password: 'Superman1!',
+	    access_key: '9D18C4951A14894C',
+	    imperial: true // set to false for metric 
+	});
+
+	// ups.time_in_transit({
+	//             data = {
+	//                 from: {
+	//                     city: 'Los Angeles',
+	//                     state_code: 'CA',
+	//                     postal_code: '90620',
+	//                     country_code: 'US'
+	//                 },
+	//                 to: {
+	//                     city: 'Rocklin',
+	//                     state_code: 'CA',
+	//                     postal_code: '95765',
+	//                     country_code: 'US'
+	//                 },
+	//                 weight: 10, // set imperial to false for KGS 
+	//                 pickup_date: '20161031',
+	//                 total_packages: 1, // number of packages in shipment 
+	//                 value: null, // Invoice value, set currency in options 
+	//             }
+	//         }
+	//     },
+	//     function(err, res) {
+	//         if (err) {
+	//             console.log(err);
+	//         }
+
+	//         console.log(util.inspect(res, { depth: null }));
+	//     });
+
+
 	// Create the Search component
 	// Notice how the header uses .createClass
 	// Notice how it uses a render function which specifies what will be displayed by the component
 	var Search = React.createClass({
-		displayName: 'Search',
+	    displayName: 'Search',
 
 
-		render: function render() {
+	    render: function render() {
 
-			return React.createElement(
-				'h1',
-				null,
-				'I\'m the Search Component!!'
-			);
-		}
+	        return React.createElement(
+	            'div',
+	            null,
+	            React.createElement(
+	                'h1',
+	                null,
+	                ' I \'m the Search Component!!'
+	            ),
+	            ' '
+	        );
+	    }
 	});
 
 	// Export the componen back for use in other files
