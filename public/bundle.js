@@ -19830,16 +19830,6 @@
 	// Include React 
 	var React = __webpack_require__(1);
 
-	// var upsAPI = require('shipping-ups');
-
-	var ups = new upsAPI({
-	    environment: 'sandbox', // or live 
-	    username: 'leonardoh',
-	    password: 'Superman1!',
-	    access_key: '9D18C4951A14894C',
-	    imperial: true // set to false for metric 
-	});
-
 	// ups.time_in_transit({
 	//             data = {
 	//                 from: {
